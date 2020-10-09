@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "kisspng-computer-icons-portable-network-graphics-scalable-gfplay-svg-png-icon-free-download-276815-onli-5bf2f2e4211bb1.3341511815426485481356-1.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "kisspng-computer-icons-portable-network-graphics-scalable-gfplay-svg-png-icon-free-download-276815-onli-5bf2f2e4211bb1.3341511815426485481356.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "kisspng-computer-icons-portable-network-graphics-scalable-gfplay-svg-png-icon-free-download-276815-onli-5bf2f2e4211bb1.3341511815426485481356-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

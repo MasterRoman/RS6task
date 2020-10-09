@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84BFF40624FBE9800002B153 /* EntityVideo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BFF40424FBE9800002B153 /* EntityVideo+CoreDataClass.m */; };
+		84BFF40724FBE9800002B153 /* EntityVideo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BFF40524FBE9800002B153 /* EntityVideo+CoreDataProperties.m */; };
+		84C1B7AC250EA03500F0F147 /* VideoDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1B7AB250EA03500F0F147 /* VideoDelegate.m */; };
+		84C772F92506BB73006D2062 /* VideoDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C772F82506BB73006D2062 /* VideoDataSource.m */; };
+		84E91F0324F8403500815718 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E91F0124F8403500815718 /* DetailViewController.m */; };
+		84E91F0424F8403500815718 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E91F0224F8403500815718 /* DetailViewController.xib */; };
+		84EF0ABB24F517AC00CE4659 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF0ABA24F517AC00CE4659 /* AppDelegate.m */; };
+		84EF0AC724F517AC00CE4659 /* RomTub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84EF0AC524F517AC00CE4659 /* RomTub.xcdatamodeld */; };
+		84EF0AC924F517AE00CE4659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EF0AC824F517AE00CE4659 /* Assets.xcassets */; };
+		84EF0ACC24F517AE00CE4659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EF0ACA24F517AE00CE4659 /* LaunchScreen.storyboard */; };
+		84EF0ACF24F517AE00CE4659 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF0ACE24F517AE00CE4659 /* main.m */; };
+		84EF0ADA24F518B000CE4659 /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF0AD924F518B000CE4659 /* RootTabBarController.m */; };
+		84EF0AE524F51F3700CE4659 /* SearchingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF0AE424F51F3700CE4659 /* SearchingTextField.m */; };
+		84EF0AFF24F543D600CE4659 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF0AFD24F543D600CE4659 /* MainTableViewCell.m */; };
+		84EF0B0024F543D600CE4659 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EF0AFE24F543D600CE4659 /* MainTableViewCell.xib */; };
+		84EF0B0424F551CC00CE4659 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF0B0324F551CC00CE4659 /* Video.m */; };
+		84EF0B0824F5573300CE4659 /* VideoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF0B0724F5573300CE4659 /* VideoService.m */; };
+		84EF0B0D24F5595200CE4659 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF0B0C24F5595200CE4659 /* XMLParser.m */; };
+		84F4CE3C24F6B452008A6EB5 /* ImageDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F4CE3B24F6B452008A6EB5 /* ImageDownloadOperation.m */; };
+		84F662C924F67A8F009C010F /* SharedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F662C724F67A8F009C010F /* SharedViewController.m */; };
+		84F662CA24F67A8F009C010F /* SharedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F662C824F67A8F009C010F /* SharedViewController.xib */; };
+		84FB78C2251517A40097748D /* FavouriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FB78C0251517A40097748D /* FavouriteViewController.m */; };
+		84FB78C3251517A40097748D /* FavouriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FB78C1251517A40097748D /* FavouriteViewController.xib */; };
+		84FB78C725151D180097748D /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FB78C525151D180097748D /* TableViewCell.m */; };
+		84FB78C825151D180097748D /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FB78C625151D180097748D /* TableViewCell.xib */; };
+		84FB78CC251523D30097748D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FB78CA251523D30097748D /* ViewController.m */; };
+		84FB78CD251523D30097748D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FB78CB251523D30097748D /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84EB6A4C2528FF0100CE1500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84EF0AAE24F517AC00CE4659 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84EF0AB524F517AC00CE4659;
+			remoteInfo = RomTub;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84BFF40224FBE9800002B153 /* EntityVideo+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EntityVideo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		84BFF40324FBE9800002B153 /* EntityVideo+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EntityVideo+CoreDataClass.h"; sourceTree = "<group>"; };
+		84BFF40424FBE9800002B153 /* EntityVideo+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EntityVideo+CoreDataClass.m"; sourceTree = "<group>"; };
+		84BFF40524FBE9800002B153 /* EntityVideo+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EntityVideo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		84C1B7AA250EA03500F0F147 /* VideoDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoDelegate.h; sourceTree = "<group>"; };
+		84C1B7AB250EA03500F0F147 /* VideoDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoDelegate.m; sourceTree = "<group>"; };
+		84C772F72506BB73006D2062 /* VideoDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoDataSource.h; sourceTree = "<group>"; };
+		84C772F82506BB73006D2062 /* VideoDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoDataSource.m; sourceTree = "<group>"; };
+		84E91F0024F8403500815718 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		84E91F0124F8403500815718 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		84E91F0224F8403500815718 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		84EB6A472528FF0100CE1500 /* RomTubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomTubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EF0AB624F517AC00CE4659 /* RomTub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RomTub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EF0AB924F517AC00CE4659 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84EF0ABA24F517AC00CE4659 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84EF0AC624F517AC00CE4659 /* RomTub.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RomTub.xcdatamodel; sourceTree = "<group>"; };
+		84EF0AC824F517AE00CE4659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84EF0ACB24F517AE00CE4659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84EF0ACD24F517AE00CE4659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EF0ACE24F517AE00CE4659 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84EF0AD824F518B000CE4659 /* RootTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootTabBarController.h; sourceTree = "<group>"; };
+		84EF0AD924F518B000CE4659 /* RootTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootTabBarController.m; sourceTree = "<group>"; };
+		84EF0AE324F51F3700CE4659 /* SearchingTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchingTextField.h; sourceTree = "<group>"; };
+		84EF0AE424F51F3700CE4659 /* SearchingTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchingTextField.m; sourceTree = "<group>"; };
+		84EF0AFC24F543D600CE4659 /* MainTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
+		84EF0AFD24F543D600CE4659 /* MainTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
+		84EF0AFE24F543D600CE4659 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		84EF0B0224F551CC00CE4659 /* Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		84EF0B0324F551CC00CE4659 /* Video.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		84EF0B0624F5573300CE4659 /* VideoService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoService.h; sourceTree = "<group>"; };
+		84EF0B0724F5573300CE4659 /* VideoService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoService.m; sourceTree = "<group>"; };
+		84EF0B0A24F557FB00CE4659 /* ParserProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParserProtocol.h; sourceTree = "<group>"; };
+		84EF0B0B24F5595200CE4659 /* XMLParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		84EF0B0C24F5595200CE4659 /* XMLParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		84F4CE3A24F6B452008A6EB5 /* ImageDownloadOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageDownloadOperation.h; sourceTree = "<group>"; };
+		84F4CE3B24F6B452008A6EB5 /* ImageDownloadOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageDownloadOperation.m; sourceTree = "<group>"; };
+		84F662C624F67A8F009C010F /* SharedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedViewController.h; sourceTree = "<group>"; };
+		84F662C724F67A8F009C010F /* SharedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharedViewController.m; sourceTree = "<group>"; };
+		84F662C824F67A8F009C010F /* SharedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SharedViewController.xib; sourceTree = "<group>"; };
+		84FB78BF251517A40097748D /* FavouriteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavouriteViewController.h; sourceTree = "<group>"; };
+		84FB78C0251517A40097748D /* FavouriteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavouriteViewController.m; sourceTree = "<group>"; };
+		84FB78C1251517A40097748D /* FavouriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteViewController.xib; sourceTree = "<group>"; };
+		84FB78C425151D180097748D /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		84FB78C525151D180097748D /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		84FB78C625151D180097748D /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		84FB78C9251523D30097748D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		84FB78CA251523D30097748D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84FB78CB251523D30097748D /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84EB6A442528FF0100CE1500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EF0AB324F517AC00CE4659 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84EF0AAD24F517AC00CE4659 = {
+			isa = PBXGroup;
+			children = (
+				84BFF40224FBE9800002B153 /* EntityVideo+CoreDataProperties.h */,
+				84BFF40324FBE9800002B153 /* EntityVideo+CoreDataClass.h */,
+				84BFF40424FBE9800002B153 /* EntityVideo+CoreDataClass.m */,
+				84BFF40524FBE9800002B153 /* EntityVideo+CoreDataProperties.m */,
+				84EF0AB824F517AC00CE4659 /* RomTub */,
+				84EF0AB724F517AC00CE4659 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84EF0AB724F517AC00CE4659 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84EF0AB624F517AC00CE4659 /* RomTub.app */,
+				84EB6A472528FF0100CE1500 /* RomTubTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84EF0AB824F517AC00CE4659 /* RomTub */ = {
+			isa = PBXGroup;
+			children = (
+				84EF0AB924F517AC00CE4659 /* AppDelegate.h */,
+				84EF0ABA24F517AC00CE4659 /* AppDelegate.m */,
+				84EF0AC824F517AE00CE4659 /* Assets.xcassets */,
+				84EF0B0124F551B100CE4659 /* Model */,
+				84EF0AFB24F5439900CE4659 /* Cells */,
+				84EF0AE624F5216100CE4659 /* Controllers */,
+				84EF0B0924F557BC00CE4659 /* Parsers */,
+				84EF0B0524F556E600CE4659 /* Services */,
+				84EF0AE724F5218000CE4659 /* Custom Elements */,
+				84EF0ACA24F517AE00CE4659 /* LaunchScreen.storyboard */,
+				84EF0ACD24F517AE00CE4659 /* Info.plist */,
+				84EF0ACE24F517AE00CE4659 /* main.m */,
+				84EF0AC524F517AC00CE4659 /* RomTub.xcdatamodeld */,
+			);
+			path = RomTub;
+			sourceTree = "<group>";
+		};
+		84EF0AE624F5216100CE4659 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84EF0AD824F518B000CE4659 /* RootTabBarController.h */,
+				84EF0AD924F518B000CE4659 /* RootTabBarController.m */,
+				84FB78BF251517A40097748D /* FavouriteViewController.h */,
+				84FB78C0251517A40097748D /* FavouriteViewController.m */,
+				84FB78C1251517A40097748D /* FavouriteViewController.xib */,
+				84F662C624F67A8F009C010F /* SharedViewController.h */,
+				84F662C724F67A8F009C010F /* SharedViewController.m */,
+				84F662C824F67A8F009C010F /* SharedViewController.xib */,
+				84E91F0024F8403500815718 /* DetailViewController.h */,
+				84E91F0124F8403500815718 /* DetailViewController.m */,
+				84E91F0224F8403500815718 /* DetailViewController.xib */,
+				84FB78C9251523D30097748D /* ViewController.h */,
+				84FB78CA251523D30097748D /* ViewController.m */,
+				84FB78CB251523D30097748D /* ViewController.xib */,
+				84C772F72506BB73006D2062 /* VideoDataSource.h */,
+				84C772F82506BB73006D2062 /* VideoDataSource.m */,
+				84C1B7AA250EA03500F0F147 /* VideoDelegate.h */,
+				84C1B7AB250EA03500F0F147 /* VideoDelegate.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84EF0AE724F5218000CE4659 /* Custom Elements */ = {
+			isa = PBXGroup;
+			children = (
+				84EF0AE324F51F3700CE4659 /* SearchingTextField.h */,
+				84EF0AE424F51F3700CE4659 /* SearchingTextField.m */,
+			);
+			path = "Custom Elements";
+			sourceTree = "<group>";
+		};
+		84EF0AFB24F5439900CE4659 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				84EF0AFC24F543D600CE4659 /* MainTableViewCell.h */,
+				84EF0AFD24F543D600CE4659 /* MainTableViewCell.m */,
+				84EF0AFE24F543D600CE4659 /* MainTableViewCell.xib */,
+				84FB78C425151D180097748D /* TableViewCell.h */,
+				84FB78C525151D180097748D /* TableViewCell.m */,
+				84FB78C625151D180097748D /* TableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		84EF0B0124F551B100CE4659 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84EF0B0224F551CC00CE4659 /* Video.h */,
+				84EF0B0324F551CC00CE4659 /* Video.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84EF0B0524F556E600CE4659 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84EF0B0624F5573300CE4659 /* VideoService.h */,
+				84EF0B0724F5573300CE4659 /* VideoService.m */,
+				84F4CE3A24F6B452008A6EB5 /* ImageDownloadOperation.h */,
+				84F4CE3B24F6B452008A6EB5 /* ImageDownloadOperation.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84EF0B0924F557BC00CE4659 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				84EF0B0A24F557FB00CE4659 /* ParserProtocol.h */,
+				84EF0B0B24F5595200CE4659 /* XMLParser.h */,
+				84EF0B0C24F5595200CE4659 /* XMLParser.m */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84EB6A462528FF0100CE1500 /* RomTubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84EB6A502528FF0100CE1500 /* Build configuration list for PBXNativeTarget "RomTubTests" */;
+			buildPhases = (
+				84EB6A432528FF0100CE1500 /* Sources */,
+				84EB6A442528FF0100CE1500 /* Frameworks */,
+				84EB6A452528FF0100CE1500 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84EB6A4D2528FF0100CE1500 /* PBXTargetDependency */,
+			);
+			name = RomTubTests;
+			productName = RomTubTests;
+			productReference = 84EB6A472528FF0100CE1500 /* RomTubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84EF0AB524F517AC00CE4659 /* RomTub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84EF0AD224F517AE00CE4659 /* Build configuration list for PBXNativeTarget "RomTub" */;
+			buildPhases = (
+				84EF0AB224F517AC00CE4659 /* Sources */,
+				84EF0AB324F517AC00CE4659 /* Frameworks */,
+				84EF0AB424F517AC00CE4659 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RomTub;
+			productName = RomTub;
+			productReference = 84EF0AB624F517AC00CE4659 /* RomTub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84EF0AAE24F517AC00CE4659 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = MasterCORP;
+				TargetAttributes = {
+					84EB6A462528FF0100CE1500 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 84EF0AB524F517AC00CE4659;
+					};
+					84EF0AB524F517AC00CE4659 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 84EF0AB124F517AC00CE4659 /* Build configuration list for PBXProject "RomTub" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84EF0AAD24F517AC00CE4659;
+			productRefGroup = 84EF0AB724F517AC00CE4659 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84EF0AB524F517AC00CE4659 /* RomTub */,
+				84EB6A462528FF0100CE1500 /* RomTubTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84EB6A452528FF0100CE1500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EF0AB424F517AC00CE4659 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FB78C3251517A40097748D /* FavouriteViewController.xib in Resources */,
+				84F662CA24F67A8F009C010F /* SharedViewController.xib in Resources */,
+				84FB78CD251523D30097748D /* ViewController.xib in Resources */,
+				84FB78C825151D180097748D /* TableViewCell.xib in Resources */,
+				84EF0ACC24F517AE00CE4659 /* LaunchScreen.storyboard in Resources */,
+				84E91F0424F8403500815718 /* DetailViewController.xib in Resources */,
+				84EF0B0024F543D600CE4659 /* MainTableViewCell.xib in Resources */,
+				84EF0AC924F517AE00CE4659 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84EB6A432528FF0100CE1500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EF0AB224F517AC00CE4659 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EF0B0D24F5595200CE4659 /* XMLParser.m in Sources */,
+				84BFF40624FBE9800002B153 /* EntityVideo+CoreDataClass.m in Sources */,
+				84EF0B0824F5573300CE4659 /* VideoService.m in Sources */,
+				84BFF40724FBE9800002B153 /* EntityVideo+CoreDataProperties.m in Sources */,
+				84F4CE3C24F6B452008A6EB5 /* ImageDownloadOperation.m in Sources */,
+				84EF0ACF24F517AE00CE4659 /* main.m in Sources */,
+				84EF0B0424F551CC00CE4659 /* Video.m in Sources */,
+				84EF0AE524F51F3700CE4659 /* SearchingTextField.m in Sources */,
+				84FB78CC251523D30097748D /* ViewController.m in Sources */,
+				84F662C924F67A8F009C010F /* SharedViewController.m in Sources */,
+				84EF0AC724F517AC00CE4659 /* RomTub.xcdatamodeld in Sources */,
+				84C1B7AC250EA03500F0F147 /* VideoDelegate.m in Sources */,
+				84EF0ADA24F518B000CE4659 /* RootTabBarController.m in Sources */,
+				84EF0AFF24F543D600CE4659 /* MainTableViewCell.m in Sources */,
+				84FB78C725151D180097748D /* TableViewCell.m in Sources */,
+				84C772F92506BB73006D2062 /* VideoDataSource.m in Sources */,
+				84FB78C2251517A40097748D /* FavouriteViewController.m in Sources */,
+				84EF0ABB24F517AC00CE4659 /* AppDelegate.m in Sources */,
+				84E91F0324F8403500815718 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84EB6A4D2528FF0100CE1500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84EF0AB524F517AC00CE4659 /* RomTub */;
+			targetProxy = 84EB6A4C2528FF0100CE1500 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84EF0ACA24F517AE00CE4659 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84EF0ACB24F517AE00CE4659 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84EB6A4E2528FF0100CE1500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RomTubTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = corp.RomTubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RomTub.app/RomTub";
+			};
+			name = Debug;
+		};
+		84EB6A4F2528FF0100CE1500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RomTubTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = corp.RomTubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RomTub.app/RomTub";
+			};
+			name = Release;
+		};
+		84EF0AD024F517AE00CE4659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84EF0AD124F517AE00CE4659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84EF0AD324F517AE00CE4659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RomTub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = corp.RomTub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84EF0AD424F517AE00CE4659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RomTub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = corp.RomTub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84EB6A502528FF0100CE1500 /* Build configuration list for PBXNativeTarget "RomTubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EB6A4E2528FF0100CE1500 /* Debug */,
+				84EB6A4F2528FF0100CE1500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84EF0AB124F517AC00CE4659 /* Build configuration list for PBXProject "RomTub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EF0AD024F517AE00CE4659 /* Debug */,
+				84EF0AD124F517AE00CE4659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84EF0AD224F517AE00CE4659 /* Build configuration list for PBXNativeTarget "RomTub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EF0AD324F517AE00CE4659 /* Debug */,
+				84EF0AD424F517AE00CE4659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84EF0AC524F517AC00CE4659 /* RomTub.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84EF0AC624F517AC00CE4659 /* RomTub.xcdatamodel */,
+			);
+			currentVersion = 84EF0AC624F517AC00CE4659 /* RomTub.xcdatamodel */;
+			path = RomTub.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 84EF0AAE24F517AC00CE4659 /* Project object */;
+}
